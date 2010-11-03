@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=abevjava
+Terminal=false
+Exec=abevjava
+Categories=Utility
+GenericName=Electronic formfill application (APEH, Hungary)
+GenericName[hu]=Elektronikus APEH nyomtatványkitöltő
+Icon=abevjava
+

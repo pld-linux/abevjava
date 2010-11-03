@@ -1,0 +1,8 @@
+#!/bin/bash
+
+curdir=$(pwd)
+
+cd /usr/share/abevjava
+java -jar abevjava.jar
+cd $curdir
+
