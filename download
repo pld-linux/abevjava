@@ -1,0 +1,6 @@
+#!/bin/bash
+for nyomtatvany in $(w3m -dump_source "http://www.apeh.hu/bevallasok/nyomtatvany/bevallasok?complex=false&allprograms=true" | \
+	grep "<a href.*bevallasok/nyomtatvany/bevallasok/[^<]*>[^<]*</a>" | sed "s@<a[^>]*>\([^<]*\).*@\1@"); do 
+	wget $(w3m -dump_source http://www.apeh.hu/bevallasok/nyomtatvany/bevallasok/$nyomtatvany.html | \
+		grep "$nyomtatvany .jar letöltése" | sed 's@<a href="\([^"]*\).*@www.apeh.hu\1@')
+done
