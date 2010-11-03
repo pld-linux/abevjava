@@ -1,20 +1,20 @@
-# TODO: can't use installed forms
 Summary:	Electronic formfill application (APEH, Hungary)
 Summary(hu.UTF-8):	Elektronikus APEH nyomtatványkitöltő
 Name:		abevjava
 Version:	2.17.0
-Release:	0.1
+Release:	0.2
 License:	GPL v2, Apache License v2, MPL
 Group:		Applications
 Source0:	http://www.apeh.hu/data/cms36637/%{name}_install.jar
 # Source0-md5:	766c5cce1764e92c388609bdecb4cf15
 Source1:	http://carme.pld-linux.org/~uzsolt/sources/%{name}-forms.tar.xz
-# Source1-md5:	4b67d066c20a85c3459d3ab2f2d40073
+# Source1-md5:	d42d3d4e43c68841fb1040e6f98192e6
 Source2:	%{name}
 Source3:	%{name}.desktop
 URL:		http://www.apeh.hu/bevallasok/nyomtatvany/keretprogramok/abevjava_install.html
 Requires:	jre-X11
 Suggests:	%{name}-forms = %{version}-%{release}
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
