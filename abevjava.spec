@@ -12,6 +12,7 @@ Source1:	http://carme.pld-linux.org/~uzsolt/sources/%{name}-forms.tar.xz
 Source2:	%{name}
 Source3:	%{name}.desktop
 URL:		http://www.apeh.hu/bevallasok/nyomtatvany/keretprogramok/abevjava_install.html
+BuildRequires:	unzip
 Requires:	jre-X11
 Suggests:	%{name}-forms = %{version}-%{release}
 BuildArch:	noarch
